@@ -1,4 +1,7 @@
 .portal{
+  max-width: 390px;
+  height: auto;
   display: block;
   text-align: center;
+  margin-top: 10px;
 }
