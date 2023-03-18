@@ -2,17 +2,14 @@ import 'zone.js/dist/zone';
 import { Component } from '@angular/core';
 import { CommonModule } from '@angular/common';
 import { bootstrapApplication } from '@angular/platform-browser';
+import { PortalComponent } from './components/portal/portal.component';
 
 @Component({
   selector: 'my-app',
   standalone: true,
-  imports: [CommonModule],
+  imports: [CommonModule,PortalComponent],
   template: `
-    <h1>Hola, soy {{name}}!</h1>
-    <a target="_blank" href="https://angular.io/start">
-      Esta es mi primera aplicación en Angular 
-    </a>
-    <img src= {{img}}   width="210" height="240" alt="Logo HTML5">
+  <app-portal>
   `,
 })
 export class App {
